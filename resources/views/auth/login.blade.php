@@ -13,9 +13,9 @@
                 <form class="form" method="POST" action="{{ route('login') }}">
                 @csrf
                     <div class="header header-primary text-center">
+                    <i class="fa fa-user fa-2x"></i><br><br>
                         <h4>Inicia Sesión</h4>
                         <div class="social-line">
-                        <i class="fa fa-user fa-2x"></i>
                         </div>
                     </div>
                     <p class="text-divider"></p>
