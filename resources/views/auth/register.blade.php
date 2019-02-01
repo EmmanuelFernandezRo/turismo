@@ -13,9 +13,10 @@
                 <form class="form" method="POST" action="{{ route('register') }}">
                 @csrf
                     <div class="header header-primary text-center">
+                        <i class="fa fa-plus-circle fa-2x"></i><br><br>
                         <h4>¡Regístrate ahora!</h4>
                         <div class="social-line">
-                        <p class="text-divider"><i class="fa fa-plus-circle fa-2x"></i></p>
+                        <p class="text-divider"></p>
                         </div>
                     </div>
                     <div class="content">
