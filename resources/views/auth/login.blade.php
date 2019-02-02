@@ -4,6 +4,12 @@
 
 @section('body-class', 'signup-page')
 
+@section('log-reg')
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('register') }}"><i class="fa fa-plus-circle"></i>{{ __('Registrarse') }}</a>
+    </li>
+@endsection
+
 @section('content')
 <div class="header header-filter" style="background-image: url('{{asset ('img/city.jpg')}}'); background-size: cover; background-position: top center;">
 <div class="container">

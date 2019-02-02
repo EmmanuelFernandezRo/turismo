@@ -2,6 +2,12 @@
 
 @section('Titulo-pag', 'Registro')
 
+@section('log-reg')
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('login') }}"><i class="fa fa-user" style="color:white"></i>{{ __('Iniciar sesión') }}</a>
+    </li>
+@endsection
+
 @section('body-class', 'signup-page')
 
 @section('content')

@@ -39,15 +39,10 @@
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}"><i class="fa fa-user" style="color:white"></i>{{ __('Iniciar sesión') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}"><i class="fa fa-plus-circle"></i>{{ __('Registrarse') }}</a>
-                                </li>
-                            @endif
+						@guest
+
+						@yield('log-reg')
+						
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

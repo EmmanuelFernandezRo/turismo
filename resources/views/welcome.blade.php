@@ -2,6 +2,16 @@
 	
 @section('Titulo-pag', 'Reserva en..')
 
+@section('log-reg')
+	<li class="nav-item">
+        <a class="nav-link" href="{{ route('login') }}"><i class="fa fa-user" style="color:white"></i>{{ __('Iniciar sesión') }}</a>
+	</li>
+
+	<li class="nav-item">
+        <a class="nav-link" href="{{ route('register') }}"><i class="fa fa-plus-circle"></i>{{ __('Registrarse') }}</a>
+    </li>
+@endsection
+
 @section('body-class', 'landing-page')
 
 @section('content')
